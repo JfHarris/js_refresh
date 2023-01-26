@@ -19,6 +19,15 @@ it("should return 20 for a game where all rolls knock down one pin", () => {
   expect(game.score).to.equal(20);
 });
 
+it("should return correct score after a spare is rolled", () => {
+  game.roll(5);
+  game.roll(5);
+  game.roll(3);
+  rollMany(0, 17);
+
+  expect(game.score).to.equal(16);
+});
+
 function rollMany(pins, rolls) {
   for (let x = 0; x < rolls; x++) {
     game.roll(pins);
