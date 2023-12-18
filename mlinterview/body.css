@@ -9,6 +9,8 @@ body {
     margin: 0;
 }
 
+/* Top section */
+
 .top {
     position: relative;
     background-color: black;
@@ -16,12 +18,16 @@ body {
     height: 20vh;
 }
 
+/* Middle Section */
+
 .middle {
     position: relative;
     background-color: black;
     color: white;
     height: 33vh;
 }
+
+/* Bottom Section */
 
 .bottom {
     display: flex;
@@ -60,4 +66,24 @@ article p {
 
 article a {
     text-decoration: none;
+}
+
+/* Responsive Section */
+
+@media (max-width: 600px) {
+    .bottom {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    article {
+        max-width: 100%;
+    }
+}
+
+
+@media (min-width: 601px) and (max-width: 900px) {
+    article {
+        max-width: 50%;
+    }
 }
