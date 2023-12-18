@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.top {
+    position: relative;
+    background-color: black;
+    color: white;
+    height: 20vh;
+}
+
+.middle {
+    position: relative;
+    background-color: black;
+    color: white;
+    height: 33vh;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+    height: auto;
+    margin: 0;
+    text-align: center;
+    justify-content: center;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 33vw;
+}
+
+article img {
+    display: block;
+    margin: auto;
+    padding: 1rem;
+    height: 200px;
+    width: 200px;
+}
+
+article h2 {
+    position: relative;
+    padding: 1rem;
+}
+
+article p {
+    padding: 1rem;
+}
+
+article a {
+    text-decoration: none;
+}
