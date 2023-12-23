@@ -14,7 +14,7 @@ fetch(RSS_URL)
         const el = items[i];
         html += `
           <article>
-            <img src="./antoine.jpg">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/77/The_New_York_Times_logo.png">
             <h2>
             ${el.querySelector("title").innerHTML}
             </h2>
@@ -27,7 +27,7 @@ fetch(RSS_URL)
         `;
     };
     //document.body.insertAdjacentHTML("beforeend", html); removed to correctly place news items in bottom section
-    const bottomSection = document.querySelector('.bottom');
+    const bottomSection = document.querySelector('.news');
     if (bottomSection) {
         bottomSection.insertAdjacentHTML("beforeend", html);
     }

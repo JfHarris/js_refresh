@@ -1,4 +1,5 @@
 body {
+    background-color: white;
     margin: 0;
     padding: 0;
 }
@@ -13,8 +14,6 @@ body {
 
 .top {
     position: relative;
-    background-color: black;
-    color: white;
     height: 20vh;
 }
 
@@ -31,28 +30,34 @@ body {
 
 .bottom {
     display: flex;
-    flex-direction: row;
-    background-color: black;
-    color: white;
+    flex-direction: column;
     height: auto;
     margin: 0;
     text-align: center;
     justify-content: center;
 }
 
+.news {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
 article {
     display: flex;
     flex-direction: column;
     padding: 1rem;
-    width: 33vw;
+    width: auto;
+    border: 3px black solid;
+    margin: 1rem;
 }
 
 article img {
     display: block;
     margin: auto;
     padding: 1rem;
-    height: 200px;
-    width: 200px;
+    max-width: 25vw;
 }
 
 article h2 {
