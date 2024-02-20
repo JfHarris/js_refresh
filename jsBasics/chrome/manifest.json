@@ -1,0 +1,10 @@
+{
+    "manifest_version": 3,
+    "version": "1",
+    "name": "Simple Boookmark",
+    "description": "Simply booksmarks pages",
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": "book.png"
+    }
+}
