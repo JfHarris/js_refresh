@@ -40,23 +40,11 @@ tabBtn.addEventListener("click", function() {
     myBookmarks.push(tabs[0].url);
     localStorage.setItem("myBookmarks", JSON.stringify(myBookmarks));
     render(myBookmarks);
-  })
-
-
-})
+  });
+});
 
 deleteBtn.addEventListener("dblclick", function() {
   localStorage.clear();
   myBookmarks = [];
   render(myBookmarks);
-})
-
-
-
-
-
-/*function saveLead() {
-  inputBtn.addEventListener("click", function() {
-    console.log("Button clicked")
-  })
-}*/
+});

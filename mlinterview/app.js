@@ -9,7 +9,7 @@ fetch(RSS_URL)
     console.log(data);
     const items = data.querySelectorAll("item");
     let html = ``;
-    //items.forEach(el => { removed to only get 3 results
+    //items.forEach(el => { uncomment this and comment out for loop initialization below to only get all results
       for (let i = 0; i < Math.min(3, items.length); i++) {
         const el = items[i];
         html += `
@@ -32,9 +32,6 @@ fetch(RSS_URL)
         bottomSection.insertAdjacentHTML("beforeend", html);
     }
   });
-
-  //<section class="bottom"></section> removed to keep from creating 3 different sections...good try though
-
   /*
   I did this to limit the returned articles.
   const parent = document.getElementById("newsItem").getElementsByTagName("section")[0];
